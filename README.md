@@ -15,7 +15,7 @@ mellett funkcionális nyelven írt megoldásokra is.
 
 A nyári szakmai ösztöndíjam keretein belül a mesterséges intelligenciához kapcsolódó problémák megoldásával foglalkoztam. Elsőkörben egyszemélyes játékokhoz készítettem különböző keresők alkalmazásával megoldáskereső algoritmusokat. Ezek mellett a kétszemélyes játékokhoz kapcsolódó lépésajánló algoritmusok működésében is elmélyedtem. Az egyes játékokhoz kötődő algoritmusok imperatív megoldásai mellett külön kitértem a funkcionális nyelven írt megoldásokra is. 
 
-# Balázs Patrícia
+Balázs Patrícia
 
 Debreceni Egyetem 
 Informatikai Kar
