@@ -17,8 +17,8 @@ A nyári szakmai ösztöndíjam keretein belül a mesterséges intelligenciához
 
 Debrecen, 2020.09.24.
 
-                                                                              Balázs Patrícia
-                                                                              Debreceni Egyetem Informatikai Kar, 
-                                                                              Gazdaságinformatikus BSc
+                                                                                      Balázs Patrícia
+                                                                                      Debreceni Egyetem Informatikai Kar, 
+                                                                                      Gazdaságinformatikus BSc
 
 
