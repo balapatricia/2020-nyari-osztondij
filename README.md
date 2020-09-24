@@ -1,4 +1,4 @@
-# 2020-nyari-osztondij
+# Lépésajánló algoritmusok Java és Racket nyelven
 
 Napjainkba egyre nagyobb az igény az emberi kapcsolattartásra, az emberek egyre távolabb kerülnek egymástól akár a felgyorsult
 világ, akár a járványhelyzet hatására. Ezáltal felértékelődik a távolsági kapcsolattartás szerepe. Ennek érdekében jó lehetőség, ha
