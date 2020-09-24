@@ -1,5 +1,8 @@
 #lang racket
 
+;Egyszemélyes játékok
+;Visszalépéses keresés
+
 (define (backtrack-search initialState operators apply-operator? apply-operator goal?)
   (let helper ((lst (list (list initialState null (filter (curry apply-operator? initialState) operators)))))
     #;(printf "~a~n" (caar lst))
@@ -42,6 +45,8 @@
    (equal? s '(C C C))))
 
 
+;Mélységi keresés
+
 (define (depth-first-search initialState operators apply-operator? apply-operator goal?)
   (let helper ((open (list (list initialState null 0 null))) (closed '()))
     (cond
@@ -60,8 +65,6 @@
              (loop s (cdr op) depth (cons (list (apply-operator s (car op)) (car op) (add1 depth) (car closed)) open) closed)]
             [else (loop s (cdr op) depth open closed)]))])))
          
-
-
 
 #;(depth-first-search
  '(A A A)
@@ -88,6 +91,8 @@
  (λ (s)
    (equal? s '(C C C))))
          
+
+;Szélességi keresés
 
 (define (breadth-first-search initialState operators apply-operator? apply-operator goal?)
   (let helper ((open (list (list initialState null 0 null))) (closed '()))
@@ -136,6 +141,8 @@
 
 ;----------------------------------------------------------------------------------------------------------------------
 
+;Kétszemélyes játékok
+;Minimax algoritmus
 
 (define (minimax game level)
   (let ((initial-state (first game)) (operators (second game)) (apply-operator? (third game))
@@ -163,6 +170,8 @@
               [else (helper res (cdr op))]))]
          [else (helper res (cdr op))]))])))
 
+
+;Alfabéta algoritmus
 
 (define (alphabeta game level alpha beta)
   (let ((initial-state (first game)) (operators (second game)) (apply-operator? (third game)) (apply-operator (fourth game)) (end-state? (fifth game)) (utility-function (sixth game)))
@@ -199,6 +208,7 @@
             [else (helper res (cdr op))]))])))
  
        
+;Coin Game állapottér reprezentációja
 
 (define (coin-game)
   (define (end-state? s)
@@ -289,33 +299,3 @@
 
 (play (coin-game) #f #f #t #f #t 5 5)
 ;(play (coin-game) #f #f #f #t #t 5 5)     
-  
-                            
-  
-  
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-    
